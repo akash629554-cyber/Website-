@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>লিংক শর্টনার</h2>
+        <p>আপনার বড় লিংকটি নিচে দিন</p>
+        
+        <input type="url" id="longUrl" placeholder="https://example.com/very-long-link" required>
+        <button onclick="shortenUrl()">লিংক ছোট করুন</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
