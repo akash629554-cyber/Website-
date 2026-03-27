@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Please Wait Again...</title>
     <style>
-        body { font-family: Arial; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f9; }
-        .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        body { font-family: Arial; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background-color: #f4f4f9; margin: 0; padding: 20px;}
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; width: 100%; max-width: 400px; }
         #timer { font-size: 40px; color: red; font-weight: bold; margin: 20px 0; }
-        #continueBtn { display: none; padding: 12px 25px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; }
+        #continueBtn { display: none; padding: 12px 25px; background-color: #007bff; color: white; border-radius: 5px; font-size: 18px; font-weight: bold; margin-top: 15px; cursor: pointer; border: none; width: 100%;}
+        #continueBtn:hover { background-color: #0056b3; }
+        .ad-container { margin: 15px 0; display: flex; justify-content: center; overflow: hidden; }
     </style>
 </head>
 <body>
     <div class="box">
         <h2>আরেকটু অপেক্ষা করুন...</h2>
+
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="https://pl28990088.profitablecpmratenetwork.com/421f5f0ea5f144f73a0af07cc984f83b/invoke.js"></script>
+            <div id="container-421f5f0ea5f144f73a0af07cc984f83b"></div>
+        </div>
+
         <div id="timer">15</div>
-        <a id="continueBtn" href="#">Continue</a>
+        
+        <button id="continueBtn">Continue</button>
+
+        <div class="ad-container">
+            <script>
+              atOptions = {
+                'key' : '0f3a6ad19c4c1fa7913003030e1d6d68',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/0f3a6ad19c4c1fa7913003030e1d6d68/invoke.js"></script>
+        </div>
     </div>
 
     <script>
@@ -35,10 +57,17 @@
                 timerElement.style.display = "none";
                 btnElement.style.display = "inline-block";
                 
-                // বাটনে page3.html এর লিংক সেট করা
-                btnElement.href = "page3.html?link=" + targetUrl;
+                btnElement.onclick = function() {
+                    // অ্যাড ১: Direct Link নতুন ট্যাবে ওপেন হবে
+                    window.open("https://www.profitablecpmratenetwork.com/rqei6juu1q?key=6d896fe9be6648cd6be0102ddd7a2db8", "_blank");
+                    
+                    // আসল পেজটি page3.html এ চলে যাবে (এটাই page1 এর সাথে মূল পার্থক্য)
+                    window.location.href = "page3.html?link=" + targetUrl;
+                };
             }
         }, 1000);
     </script>
+
+    <script src="https://pl28990087.profitablecpmratenetwork.com/4a/ac/9c/4aac9c3e69e2ca4bbe5b5862f1c621e5.js"></script>
 </body>
 </html>
