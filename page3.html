@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video</title>
+    <style>
+        body { font-family: Arial; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f9; }
+        .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        #playBtn { padding: 15px 30px; background-color: #dc3545; color: white; border: none; border-radius: 5px; font-size: 20px; font-weight: bold; cursor: pointer; }
+        #playBtn:hover { background-color: #c82333; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>আপনার ভিডিও প্রস্তুত!</h2>
+        <button id="playBtn" onclick="playVideo()">▶ Play Video</button>
+    </div>
+
+    <script>
+        function playVideo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const encodedUrl = urlParams.get('link');
+
+            if (encodedUrl) {
+                // লুকানো লিংকটিকে আবার ডিকোড (decode) করে অরিজিনাল লিংক বের করা
+                const originalUrl = atob(encodedUrl);
+                // অরিজিনাল লিংকে চলে যাওয়া
+                window.location.href = originalUrl;
+            } else {
+                alert("কোনো লিংক পাওয়া যায়নি!");
+            }
+        }
+    </script>
+</body>
+</html>
