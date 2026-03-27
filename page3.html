@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Video</title>
     <style>
-        body { font-family: Arial; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f4f9; }
-        .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
-        #playBtn { padding: 15px 30px; background-color: #dc3545; color: white; border: none; border-radius: 5px; font-size: 20px; font-weight: bold; cursor: pointer; }
+        body { font-family: Arial; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background-color: #f4f4f9; margin: 0; padding: 20px;}
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; width: 100%; max-width: 400px; }
+        #playBtn { padding: 15px 30px; background-color: #dc3545; color: white; border: none; border-radius: 5px; font-size: 20px; font-weight: bold; cursor: pointer; margin: 20px 0; width: 100%; }
         #playBtn:hover { background-color: #c82333; }
+        .ad-container { margin: 15px 0; display: flex; justify-content: center; overflow: hidden; }
     </style>
 </head>
 <body>
     <div class="box">
         <h2>আপনার ভিডিও প্রস্তুত!</h2>
+
+        <div class="ad-container">
+            <script async="async" data-cfasync="false" src="https://pl28990088.profitablecpmratenetwork.com/421f5f0ea5f144f73a0af07cc984f83b/invoke.js"></script>
+            <div id="container-421f5f0ea5f144f73a0af07cc984f83b"></div>
+        </div>
+
         <button id="playBtn" onclick="playVideo()">▶ Play Video</button>
+
+        <div class="ad-container">
+            <script>
+              atOptions = {
+                'key' : '0f3a6ad19c4c1fa7913003030e1d6d68',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/0f3a6ad19c4c1fa7913003030e1d6d68/invoke.js"></script>
+        </div>
     </div>
 
     <script>
@@ -23,14 +43,20 @@
             const encodedUrl = urlParams.get('link');
 
             if (encodedUrl) {
-                // লুকানো লিংকটিকে আবার ডিকোড (decode) করে অরিজিনাল লিংক বের করা
+                // আপনার লুকানো (encode করা) লিংকটিকে আবার আসল লিংকে রূপান্তর করা
                 const originalUrl = atob(encodedUrl);
-                // অরিজিনাল লিংকে চলে যাওয়া
+                
+                // অ্যাড ১: ইনকামের জন্য Direct Link টি নতুন ট্যাবে ওপেন হবে
+                window.open("https://www.profitablecpmratenetwork.com/rqei6juu1q?key=6d896fe9be6648cd6be0102ddd7a2db8", "_blank");
+                
+                // বর্তমান পেজটি আসল ইউটিউব ভিডিও বা টার্গেট লিংকে চলে যাবে
                 window.location.href = originalUrl;
             } else {
-                alert("কোনো লিংক পাওয়া যায়নি!");
+                alert("কোনো লিংক পাওয়া যায়নি! দয়া করে সঠিক লিংক ব্যবহার করুন।");
             }
         }
     </script>
+
+    <script src="https://pl28990087.profitablecpmratenetwork.com/4a/ac/9c/4aac9c3e69e2ca4bbe5b5862f1c621e5.js"></script>
 </body>
 </html>
